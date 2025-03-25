@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Configuração de sessões
 app.config["SESSION_PERMANENT"] = False
-app.config["SESSION_TYPE"] = "filesystem"
+app.config["SESSION_TYPE"] = "memory"
 Session(app)
 
 # Usuário e senha fixos (pra simplificar)
