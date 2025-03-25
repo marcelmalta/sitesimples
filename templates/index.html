@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frase do Dia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Frase do Dia</h1>
+        <video controls autoplay muted>
+            <source src="{{ url_for('static', filename='lipao.mp4') }}" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <p>{{ frase }}</p>
+        <img src="/imagem" alt="Frase em imagem">
+        <br>
+        <a href="/">Gerar outra frase</a>
+        <a href="/logout">Sair</a>
+    </div>
+</body>
+</html>
